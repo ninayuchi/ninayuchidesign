@@ -166,6 +166,12 @@ a:hover, .subtitle:hover{
 	display: none;
 }
 
+.link{
+	color: #ffaa00 !important;
+}
+
+/*responsive*/
+
 @media screen and (max-width: 800px){
 	#background path{
 		stroke-dasharray: 0;
