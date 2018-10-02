@@ -32,10 +32,22 @@ svg{
 	transition: .2s;
 }
 
+#scroll{
+	transition: .2s;
+	position: fixed;
+	top: 95vh;
+	left: 47vw;
+	font-size: 1em;
+}
+
 #background{
 	height: 100vh;
 	width: auto;
 	padding-left: 5vw;
+}
+
+#mobile-background{
+	display:none;
 }
 
 .hidden{
@@ -86,17 +98,17 @@ nav{
 	z-index: 5;
 }
 
-.content{
+#content{
 	position: absolute;
 	width: 100vw;
 	margin-top: 25vh;
 }
 
-.content div{
+#content div{
 	width: 50vw;
 }
 
-.pieces{
+#pieces{
 	position: fixed;
 }
 
@@ -120,6 +132,7 @@ nav{
 	text-align: left;
 	padding-top: 10vh;
 	padding-right: 20vw;
+	font-size: 1.2em;
 }
 
 .text{
@@ -153,12 +166,12 @@ a:hover, .subtitle:hover{
 	display: none;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
 	#background path{
 		stroke-dasharray: 0;
 		stroke-dashoffset: 0;
 	}
-	#svg, #svg2{
+	#scroll{
 		display: none;
 	}
 	#filler{
@@ -167,4 +180,38 @@ a:hover, .subtitle:hover{
 	.filler2{
 		display: block;
 	}
+	.body{
+		padding: 0;
+		font-size: 1em;
 	}
+	.text, .self{
+		width: 100%;
+		font-size: 1em;
+	}
+	#content, .subheading, #pieces, #images{
+		position: static;
+	}
+	#content{
+		margin-top: 5vh;
+	}
+	#content div{
+		width: 99%;
+	}
+	.images{
+		position: static;
+		margin: 1vw;
+	}
+	.images img, p{
+		width: 90%;
+	}
+	.subtitle{
+		font-size: 1.2em;
+	}
+	#background{
+		display:none;
+	}
+	#mobile-background{
+		display: block;
+	}
+
+}

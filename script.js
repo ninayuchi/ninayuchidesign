@@ -50,47 +50,38 @@ var bTwoLength = bTwo.getTotalLength();
 bTwo.style.strokeDasharray = bTwoLength + ' ' + bTwoLength;
 bTwo.style.strokeDashoffset = bTwoLength;
 
-var bThree = document.querySelector("#three");
-var bThreeLength = bThree.getTotalLength();
-bThree.style.strokeDasharray = bThreeLength + ' ' + bThreeLength;
-bThree.style.strokeDashoffset = bThreeLength;
+// var bThree = document.querySelector("#three");
+// var bThreeLength = bThree.getTotalLength();
+// bThree.style.strokeDasharray = bThreeLength + ' ' + bThreeLength;
+// bThree.style.strokeDashoffset = bThreeLength;
 
-var bFour = document.querySelector("#four");
-var bFourLength = bFour.getTotalLength();
-bFour.style.strokeDasharray = bFourLength + ' ' + bFourLength;
-bFour.style.strokeDashoffset = bFourLength;
+// var bFour = document.querySelector("#four");
+// var bFourLength = bFour.getTotalLength();
+// bFour.style.strokeDasharray = bFourLength + ' ' + bFourLength;
+// bFour.style.strokeDashoffset = bFourLength;
 
 window.addEventListener("scroll", function(e) {
 var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
 
-//arrows
-if (scrollPercentage >= .97){
-	var element = document.getElementById("svg");
+if (scrollPercentage >= .01){
+	var element = document.getElementById("scroll");
     element.classList.add("hidden");
 } else {
-	var element = document.getElementById("svg");
+	var element = document.getElementById("scroll");
     element.classList.remove("hidden");
-}
-
-if (scrollPercentage > 0){
-	var element = document.getElementById("svg2");
-    element.classList.remove("hidden");
-} else {
-	var element = document.getElementById("svg2");
-    element.classList.add("hidden");
 }
 
 if (scrollPercentage < 1){
 	var drawbOne = bOneLength * scrollPercentage;
 	var drawbTwo = bTwoLength * scrollPercentage;
-	var drawbThree = bThreeLength * scrollPercentage;
-	var drawbFour = bFourLength * scrollPercentage;
+	// var drawbThree = bThreeLength * scrollPercentage;
+	// var drawbFour = bFourLength * scrollPercentage;
 }
 
 bOne.style.strokeDashoffset = bOneLength - drawbOne;
 bTwo.style.strokeDashoffset = bTwoLength - drawbTwo;
-bThree.style.strokeDashoffset = bThreeLength - drawbThree;
-bFour.style.strokeDashoffset = bFourLength - drawbFour;
+// bThree.style.strokeDashoffset = bThreeLength - drawbThree;
+// bFour.style.strokeDashoffset = bFourLength - drawbFour;
 
   if (scrollPercentage >= 0.99) {
     bOne.style.strokeDasharray = "none";
