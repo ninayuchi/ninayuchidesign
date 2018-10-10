@@ -5,6 +5,7 @@ $(document).ready(function(){
 		$(".thad").addClass("gone");
 		$(".drawing").addClass("gone");
 		$(".passerby").addClass("gone");
+		$(".ds").addClass("gone");
 	});
 
 	$(".ninament-title").click(function(){
@@ -13,6 +14,7 @@ $(document).ready(function(){
 		$(".thad").addClass("gone");
 		$(".drawing").addClass("gone");
 		$(".passerby").addClass("gone");
+		$(".ds").addClass("gone");
 	});
 
 	$(".thad-title").click(function(){
@@ -21,6 +23,7 @@ $(document).ready(function(){
 		$(".ninament").addClass("gone");
 		$(".drawing").addClass("gone");
 		$(".passerby").addClass("gone");
+		$(".ds").addClass("gone");
 	});
 
 	$(".passerby-title").click(function(){
@@ -29,6 +32,7 @@ $(document).ready(function(){
 		$(".ninament").addClass("gone");
 		$(".drawing").addClass("gone");
 		$(".thad").addClass("gone");
+		$(".ds").addClass("gone");
 	});
 
 	$(".drawings-title").click(function(){
@@ -37,8 +41,22 @@ $(document).ready(function(){
 		$(".ninament").addClass("gone");
 		$(".passerby").addClass("gone");
 		$(".thad").addClass("gone");
+		$(".ds").addClass("gone");
+	});
+
+	$(".ds-title").click(function(){
+		$(".ds").removeClass("gone");
+		$(".fit").addClass("gone");
+		$(".ninament").addClass("gone");
+		$(".passerby").addClass("gone");
+		$(".thad").addClass("gone");
+		$(".drawing").addClass("gone");
 	});
 });
+
+function topFunction() {
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 var bOne = document.querySelector("#one");
 var bOneLength = bOne.getTotalLength();
