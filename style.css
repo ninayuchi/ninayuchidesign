@@ -142,6 +142,11 @@ nav{
 	width: 75%;
 }
 
+.caption{
+	font-size: .7em;
+	font-style: italic;
+}
+
 .self{
 	width: 75%;
 }

@@ -6,6 +6,8 @@ $(document).ready(function(){
 		$(".drawing").addClass("gone");
 		$(".passerby").addClass("gone");
 		$(".ds").addClass("gone");
+		$(".lp").addClass("gone");
+
 	});
 
 	$(".ninament-title").click(function(){
@@ -15,6 +17,8 @@ $(document).ready(function(){
 		$(".drawing").addClass("gone");
 		$(".passerby").addClass("gone");
 		$(".ds").addClass("gone");
+		$(".lp").addClass("gone");
+
 	});
 
 	$(".thad-title").click(function(){
@@ -24,6 +28,8 @@ $(document).ready(function(){
 		$(".drawing").addClass("gone");
 		$(".passerby").addClass("gone");
 		$(".ds").addClass("gone");
+		$(".lp").addClass("gone");
+
 	});
 
 	$(".passerby-title").click(function(){
@@ -33,6 +39,8 @@ $(document).ready(function(){
 		$(".drawing").addClass("gone");
 		$(".thad").addClass("gone");
 		$(".ds").addClass("gone");
+		$(".lp").addClass("gone");
+
 	});
 
 	$(".drawings-title").click(function(){
@@ -42,6 +50,8 @@ $(document).ready(function(){
 		$(".passerby").addClass("gone");
 		$(".thad").addClass("gone");
 		$(".ds").addClass("gone");
+		$(".lp").addClass("gone");
+
 	});
 
 	$(".ds-title").click(function(){
@@ -51,6 +61,17 @@ $(document).ready(function(){
 		$(".passerby").addClass("gone");
 		$(".thad").addClass("gone");
 		$(".drawing").addClass("gone");
+		$(".lp").addClass("gone");
+	});
+
+	$(".lp-title").click(function(){
+		$(".lp").removeClass("gone");
+		$(".fit").addClass("gone");
+		$(".ninament").addClass("gone");
+		$(".passerby").addClass("gone");
+		$(".thad").addClass("gone");
+		$(".drawing").addClass("gone");
+		$(".ds").addClass("gone");
 	});
 });
 
