@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Open+Sans');
 
 *{
-	font-family: 'Poppins', sans-serif;
+	font-family: termina, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 body{
 	background-color: white;
-	font-family: sans-serif; 
 	color: black;
 }
 
@@ -14,11 +15,18 @@ body{
 	z-index: 3;
 }
 
+
 svg{
 	position: fixed;
 	opacity: 1;
 	z-index: -1;
+	right: 0;
+	left: 0;
 
+}
+
+.header{
+	margin: 0 1%;
 }
 
 #svg{
@@ -30,14 +38,6 @@ svg{
 #svg2{
 	left: 48vw;
 	transition: .2s;
-}
-
-#scroll{
-	transition: .2s;
-	position: fixed;
-	top: 95vh;
-	left: 47vw;
-	font-size: 1em;
 }
 
 #background{
@@ -54,33 +54,13 @@ svg{
 	opacity: 0;
 }
 
-.gone{
-	display:none;
-}
-
-.block{
-	height: 100vh;
-	width: 100vw;
-	display: block;
-}
-
-#filler{
-	height: 40vh;
-}
-
-#footer{
-	height: 8vh;
-	padding-top: 4vh;
-}
-
 .title{
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 7em;
-	text-align: center;
-	width: 100%;
-	height: 100%;
+	text-align: left;
 	margin: 0;
+	font-weight: 700;
 }
 
 nav{
@@ -92,24 +72,8 @@ nav{
 }
 
 .subheading{
-	position: fixed;
 	margin: 0;
-	background-color: white;
 	z-index: 5;
-}
-
-#content{
-	position: absolute;
-	width: 100vw;
-	margin-top: 25vh;
-}
-
-#content div{
-	width: 50vw;
-}
-
-#pieces{
-	position: fixed;
 }
 
 .subtitle{
@@ -121,34 +85,28 @@ nav{
 
 .images{
 	position: absolute;
-	margin-left: 40vw;
+	margin: 3% 1% 0 1%;
+	width: 80vw;
 }
 
-.images img, p{
-	width: 90%;
+.images img, .images div{
+	width: 80%;
+	margin: 5%;
 }
 
-.body{
-	text-align: left;
-	padding-top: 10vh;
-	padding-right: 20vw;
-	font-size: 1.2em;
+.images a{
+	color: #ffaa00;
 }
 
 .text{
-	text-align: left;
-	font-size: 1.2em;
-	font-family: 'Open Sans', sans-serif;
-	width: 75%;
+	font-family: termina, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .caption{
 	font-size: .7em;
 	font-style: italic;
-}
-
-.self{
-	width: 75%;
 }
 
 .footer{
@@ -175,6 +133,23 @@ a:hover, .subtitle:hover{
 	color: #ffaa00 !important;
 }
 
+.work{
+	width: 100vw;
+}
+
+.image-block{
+	max-width: 47vw;
+	max-height: 47vh;
+	opacity: .5;
+	padding: 1vw;
+	display: inline-block;
+	transition: .2s;
+}
+
+.image-block:hover{
+	opacity: 1;
+}
+
 /*responsive*/
 
 @media screen and (max-width: 800px){
@@ -182,14 +157,18 @@ a:hover, .subtitle:hover{
 		stroke-dasharray: 0;
 		stroke-dashoffset: 0;
 	}
-	#scroll{
-		display: none;
+	.header{
+		margin: 0;
 	}
-	#filler{
-		height: 20vh;
+	.title{
+		font-size: 2.5em;
 	}
-	.filler2{
-		display: block;
+	nav{
+		font-size: 1.3em;
+	}
+	.image-block{
+		max-width: 93vw;
+		max-height: 93vh;
 	}
 	.body{
 		padding: 0;
@@ -209,11 +188,14 @@ a:hover, .subtitle:hover{
 		width: 99%;
 	}
 	.images{
-		position: static;
-		margin: 1vw;
+		/*position: static;*/
+		margin: 7% 0 0 0;
+		width: 95vw;
 	}
-	.images img, p{
-		width: 90%;
+	.images img, .images p, .images div{
+		margin: 0;
+		width: 100%;
+		font-size: .8em;
 	}
 	.subtitle{
 		font-size: 1.2em;
@@ -221,8 +203,8 @@ a:hover, .subtitle:hover{
 	#background{
 		display:none;
 	}
-	#mobile-background{
-		display: inline-block;
+	.issuu{
+		display:none;
 	}
 
 }
