@@ -169,6 +169,7 @@ a:hover, .subtitle:hover{
 	.image-block{
 		max-width: 93vw;
 		max-height: 93vh;
+		opacity: 1;
 	}
 	.body{
 		padding: 0;
