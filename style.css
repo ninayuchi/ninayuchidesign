@@ -150,6 +150,11 @@ a:hover, .subtitle:hover{
 	opacity: 1;
 }
 
+.precollege{
+	width: 20vw !important;
+	margin: 2vw !important;
+}
+
 /*responsive*/
 
 @media screen and (max-width: 800px){
@@ -206,6 +211,11 @@ a:hover, .subtitle:hover{
 	}
 	.issuu{
 		display:none;
+	}
+
+	.precollege{
+		width: 40vw !important;
+		margin: 2vw !important;
 	}
 
 }
