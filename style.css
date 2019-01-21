@@ -72,7 +72,7 @@ nav{
 }
 
 .subheading{
-	margin: 0;
+	margin: 0%;
 	z-index: 5;
 }
 
@@ -91,7 +91,7 @@ nav{
 
 .images img, .images div{
 	width: 80%;
-	margin: 5%;
+	margin: 1%;
 }
 
 .images a{
