@@ -7,8 +7,8 @@
 }
 
 body{
-	background-color: white;
-	color: black;
+	background-color: black;
+	color: white;
 }
 
 #body{
@@ -57,7 +57,7 @@ svg{
 .title{
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: 7em;
+	font-size: 6.6em;
 	text-align: left;
 	margin: 0;
 	font-weight: 700;
@@ -94,8 +94,8 @@ nav{
 	margin: 1%;
 }
 
-.images a{
-	color: #ffaa00;
+.content-block a{
+	color: #ffe32d;
 }
 
 .text{
@@ -117,12 +117,12 @@ nav{
 
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
 	transition: .2s;
 }
 
 a:hover, .subtitle:hover{
-	color: #ffaa00;
+	color: #ffe32d;
 }
 
 .filler2{
@@ -130,7 +130,7 @@ a:hover, .subtitle:hover{
 }
 
 .link{
-	color: #ffaa00 !important;
+	color: #ffe32d !important;
 }
 
 .work{
@@ -150,9 +150,18 @@ a:hover, .subtitle:hover{
 	opacity: 1;
 }
 
+.content-block, .text-block{
+	width: 47vw;
+	display: inline-block;
+	padding: 1vw;
+	margin: 0;
+	vertical-align: top;
+}
+
 .precollege{
-	width: 20vw !important;
-	margin: 2vw !important;
+	width: 21vw !important;
+	margin: 1vw !important;
+	display: inline-block;
 }
 
 /*responsive*/
@@ -193,13 +202,14 @@ a:hover, .subtitle:hover{
 	#content div{
 		width: 99%;
 	}
-	.images{
-		/*position: static;*/
+	.content-block{
+		padding:0;
 		margin: 7% 0 0 0;
 		width: 95vw;
 	}
-	.images img, .images p, .images div{
+	.content-block img, .content-block p, .content-block div{
 		margin: 0;
+		padding: 1vh 0;
 		width: 100%;
 		font-size: .8em;
 	}
