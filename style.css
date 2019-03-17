@@ -134,12 +134,12 @@ a:hover, .subtitle:hover{
 }
 
 .work{
-	width: 98vw;
+	width: 99vw;
 }
 
 .image-block{
-	max-width: 47vw;
-	max-height: 47vh;
+	max-width: 46vw;
+	max-height: 46vh;
 	opacity: .5;
 	padding: 1vw;
 	display: inline-block;
