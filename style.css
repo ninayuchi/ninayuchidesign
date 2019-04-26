@@ -202,14 +202,18 @@ a:hover, .subtitle:hover{
 	}
 	.subheading{
 		height: 2vh;
+		width: 97vw;
 	}
 	.work{
 		margin-top: 2vh;
+		justify-content: center;
+		width: 97vw;
 	}
 	.image-block{
-		max-width: 93vw;
-		max-height: 93vh;
+		max-width: 95vw;
+		max-height: 95vh;
 		opacity: 1;
+		padding: 1vw;
 	}
 	.body{
 		padding: 0;
