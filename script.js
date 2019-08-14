@@ -1,27 +1,17 @@
-function topFunction() {
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+var myArray = [
+  'a DMV-based graphic designer.',
+  'an amateur tofu chef.',
+  'a tiger in the Chinese zodiac.',
+  'an Aquarius in the Western zodiac.',
+  'a dog person (and allergic to cats).',
+  'currently listening to <a href="https://open.spotify.com/album/6K7SjlIebufubxXGf4uA7a?si=_WQqGTq6QrKPanIHrADRcw" target="_blank">Live on Ice.</a>',
+  'a graphic design student at RISD.'
+];
+
+var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+
+document.getElementById("array").innerHTML = randomItem;
+
+function myFunction() {
+	document.getElementById("array").innerHTML = myArray[Math.floor(Math.random()*myArray.length)];
 }
-
-var bOne = document.querySelector("#one");
-var bOneLength = bOne.getTotalLength();
-bOne.style.strokeDasharray = bOneLength + ' ' + bOneLength;
-bOne.style.strokeDashoffset = bOneLength;
-
-
-window.addEventListener("scroll", function(e) {
-var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
-
-if (scrollPercentage < 1){
-	var drawbOne = bOneLength * scrollPercentage;
-}
-
-bOne.style.strokeDashoffset = bOneLength - drawbOne;
-
-  if (scrollPercentage >= 0.99) {
-    bOne.style.strokeDasharray = "none";
-    
-  } else {
-    bOne.style.strokeDasharray = bOneLength + ' ' + bOneLength;
-  }
-  
-});
