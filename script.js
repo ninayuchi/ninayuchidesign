@@ -4,9 +4,12 @@ var myArray = [
   'a tiger in the Chinese zodiac.',
   'an Aquarius in the Western zodiac.',
   'a dog person (and allergic to cats).',
-  'currently listening to <a href="https://open.spotify.com/album/6K7SjlIebufubxXGf4uA7a?si=_WQqGTq6QrKPanIHrADRcw" target="_blank">Live on Ice.</a>',
+  'currently listening to <a href="https://open.spotify.com/track/5Kz1ZTkMQjhx0Chvmaoxzv?si=1YWNH5kBQwWnWfRPy_1E9Q" target="_blank">RFYL.</a>',
   'a graphic design student at RISD.',
-  'an annual viewer of the Perseid meteor showers (since 2015!).'
+  'an annual viewer of the Perseid meteor showers.',
+  'currently a redhead (soon to change).',
+  'hydrated.',
+  'thinking about her several different Halloween costumes.'
 ];
 
 var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
