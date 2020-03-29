@@ -1,3 +1,11 @@
+@font-face{
+	font-family: 'simplon';
+    src: url('fonts/simplon-mono-regular.eot?') format('embedded-opentype'),
+         url('fonts/simplon-mono-regular.woff') format('woff'),
+         url('fonts/simplon-mono-regular.ttf') format('truetype'),
+         url('fonts/simplon-mono-regular.svg') format('svg');
+}
+
 body{
 	background-color: black;
 	color: white;
@@ -52,10 +60,12 @@ a{
 }
 
 p{
-	font-family: interstate-mono, monospace;
+	font-family: simplon, interstate-mono, monospace;
 	font-weight: 300;
 	color: #c7c8ca;
 	font-size: 1.5em;
+	line-height: 120%;
+	letter-spacing: .5px
 }
 
 .bigtext{
@@ -83,7 +93,7 @@ p{
 .image-block{
 	display: inline-block;
 	width: 48%;
-	padding: .5% .5% 0 0;
+	padding: .5% 1% 0 0;
 	transition: .2s;
 	opacity: .7;
 }
