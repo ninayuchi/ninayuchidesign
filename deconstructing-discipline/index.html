@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Deconstructing Discipline</title>
+
+	 	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    </head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script src="dist/jspdf.min.js"></script>
+
+	<body>
+
+		<div id="body" function="click">
+
+			<div class="labels">
+				<p id="x-label-1" class="big-label" onclick="openAxisWindow(event)">Art</p>
+			</div>
+			<div class="labels">
+				<p id="x-label-2" class="big-label" onclick="openAxisWindow(event)">Design</p>
+			</div>
+			<div class="labels">
+				<p id="y-label-1" class="big-label" onclick="openAxisWindow(event)">Future</p>
+			</div>
+			<div class="labels">
+				<p id="y-label-2" class="big-label" onclick="openAxisWindow(event)">Present</p>
+			</div>
+
+<!-- INITIAL IMAGES -->
+		<div id="images">
+			<span title="Luigi Serafini, Codex Seraphinianus (1981)">
+				<img src="images/1.PNG" style = "left: 12vw; bottom: 8vh;">
+			</span>
+
+			<span title="Steve Lambert, The New York Times Special Edition (2008)">
+				<img src="images/2.png" style = "top: 18vh; right: 15vw;">
+			</span>
+
+			<span title="Shiho Fukuhara and Georg Tremmel, Common Flowers/Blue Rose (2009)">
+				<img src="images/3.png" style = "top: 30vh; left: 20vw;">
+			</span>
+
+			<span title="Patricia Piccinini, We Are Family (2003)">
+				<img src="images/4.png" style = "left: 10vw; bottom: 10vh;">
+			</span>
+
+			<span title="Marijin Van Der Poll, Modular Car (2002)">
+				<img src="images/5.png" style = "right: 10vw; bottom: 30vh;">
+			</span>
+
+			<span title="Nico Damore (2020)">
+				<img src="images/6.png" style = "top: 25vh; right: 10vh;">
+			</span>
+
+			<span title="Oleg Turbaba, Slack Visual Identity Concept (2019)">
+				<img src="images/7.png" style = "top: 8vh; right: 8vh">
+			</span>
+
+			<span title="Star Trek (1966–1969)">
+				<img src="images/8.jpg" style = "left: 45vw; bottom: 15vh;">
+			</span>
+
+			<span title="Ryota Kuwakubo, Bitman Video Bulb (2005)">
+				<img src="images/9.jpg" style = "left: 38vw; bottom: 38vh;">
+			</span>
+
+			<span title="Metahaven, Sealand Identity (2003)">
+				<img src="images/10.jpeg" style = "top: 40vh; left: 43vw;">
+			</span>
+
+			<span title="Nam June Paik, TV Garden (1974)">
+				<img src="images/11.jpg" style = "right: 20vw; bottom: 20vh;">
+			</span>
+
+			<span title="Akira (1988)">
+				<img class = "vertical" src="images/12.jpg" style = "left: 40vw; bottom: 18vh; width: 100px">
+			</span>
+
+			<span title="Michael Burton and Michiko Nitta, Republic of Salivation (2010)">
+				<img src="images/13.jpg" style = "top: 8vh; left: 8vw;">
+			</span>
+
+			<span title="The Martian (2015)">
+				<img class = "vertical" src="images/14.jpg" style = "top: 45vh; right: 38vw;"> 
+			</span>
+
+			<span title="David Gil, Observation Machine (2019)">
+				<img src="images/15.jpg" style = "right: 8vw; bottom: 12vh;">
+			</span>
+
+			<span title="Critical Graphic Design Tumblr (2020)">
+				<img src="images/16.jpg" style = "top: 11vh; left: 35vw;">
+			</span>
+
+			<span title="Kara Walker, Darkytown Rebellion (2001)">
+				<img src="images/17.jpg" style = "top: 38vh; left: 35vw;">
+			</span>
+
+			<span title="Christian Rex van Minnen, Toxo Moxie (2019)">
+				<img class = "vertical" src="images/18.jpg" style = "top: 15vh; left: 12vw;">
+			</span>
+
+			<span title="James King, Design Interactions Department, Royal College of Art, Dressing the Meat of Tomorrow (2006)">
+				<img src="images/19.jpg" style = "bottom: 16vh; left: 30vw;">
+			</span>
+
+			<span title="Lu Yang, What a Snack! (2019)">
+				<img class = "vertical" src="images/20.jpg" style = "top: 11vh; left: 20vw;">
+			</span>
+
+			<span title="Rudolph de Harak">
+				<img class = "vertical" src="images/21.jpeg" style = "top: 7vh; right: 8vw;">
+			</span>
+
+			<span title="El Lissitzky">
+				<img class = "vertical" src="images/22.jpg" style = "bottom: 35vh; right: 25vw;">
+			</span>
+
+			<span title="Tracy Ma">
+				<img class = "vertical" src="images/23.png" style = "top: 15vh; left: 28vw;">
+			</span>
+
+			<span title="Wendingen Magazine">
+				<img class = "vertical" src="images/24.jpg" style = "top: 25vh; left: 40vw;">
+			</span>
+
+			<span title="The Big Duck">
+				<img class = "vertical" src="images/25.jpeg" style = "top: 9vh; left: 25vw;">
+			</span>
+
+			<span title="">
+				<img class = "vertical" src="images/27.png" style = "top: 11vh; right: 5vw;">
+			</span>
+
+			<img id="output">
+		</div>
+
+<!-- FOOTER -->
+	<div id="footer">
+		<h2 id="title">Deconstructing Discipline</h2>
+		<h2 onclick="openAboutWindow(event)">About</h2>
+
+		<input type="file" accept="image/*" name="image" id="file" style="display: none;" onchange="loadFile(event)">
+		<h2><label for="file" style="cursor: pointer;">Upload Image</label></h2>
+
+		<h2 id="deleteSelected">Delete Selected</h2>
+		<h2 onclick="deleteAll(event)">Delete All</h2>
+		<h2 onclick="openAxisWindow(event)">Change Axis Labels</h2>
+		<h2 onclick="generatePDF(event)">Save as PDF</h2>
+
+	</div>
+
+
+<!-- AXIS SELECTOR -->
+<div id="axis-box">
+	<div id="axis">
+
+		<div><p>X-AXIS</p></div>
+		<div>
+			<input type="text" list="x-axis-1" id="x1">
+			<datalist id="x-axis-1">
+				<option value="Form">
+				<option value="Corporate Slavery">
+				<option value="Modern">
+			</datalist>
+			</input>
+
+			<input type="text" list="x-axis-2" id="x2">
+			<datalist id="x-axis-2">
+				<option value="Function">
+				<option value="Conceptual Nonsense">
+				<option value="Postmodern">
+			</datalist>
+			</input>
+		</div>
+
+		<div><p>Y-AXIS</p></div>
+		<div>
+			<input type="text" list="y-axis-1" id="y1">
+			<datalist id="y-axis-1">
+				<option value="Weird">
+				<option value="Utilitarian">
+				<option value="Inclusive">
+			</datalist>
+			</input>
+
+			<input type="text" list="y-axis-2" id="y2">
+			<datalist id="y-axis-2">
+				<option value="Safe">
+				<option value="Resistant">
+				<option value="Exclusive">
+			</datalist>
+			</input>
+		</div>
+
+		<div id="buttons">
+			<button class="close" onclick="closeAxisWindow(event)">Close</button>
+			<button id="go" onclick="changeAxis(event)">Go</button>
+		</div>
+	</div>
+	</div>
+
+<!-- ABOUT BOX -->
+<div id="about-box">
+
+	<h2 class="about">About The Project
+		<br><br>
+	Deconstructing Discipline is an ongoing project by Nina Yuchi. The website draws inspiration from Dunne and Raby’s mapping for speculative design: in between the present and future, not too weird and not too safe. Using these labels as a starting point, users are invited to map out their own definitions of speculative design in relation to the creator’s initial map. Users are also able to upload their own images and change the axis labels. Thus they begin to deconstruct their own design discipline through navigating a plethora of existing works. 
+		<br><br>
+	This website was coded by Nina Yuchi using HTML, CSS, and Javascript. Note: works best on desktop. Not optimized for responsive web.</h2>
+		<br><br><br>
+	<button class="close" onclick="closeAboutWindow(event)">Close</button>
+</div>
+</div>
+
+
+<div id="elementH"></div>
+
+
+
+	</body>
+
+	<script type="text/javascript" src="script.js"></script>
+
+</html>
