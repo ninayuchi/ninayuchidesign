@@ -10,13 +10,13 @@ body{
 	z-index: 1;
 }
 
-#canvasPDF{
+/*#canvasPDF{
 	background-image: radial-gradient(circle, #f4a096 0%, #007365 100%);
 	background-image: -webkit-radial-gradient(circle, #f4a096 0%, #007365 100%);
     background-image:    -moz-radial-gradient(circle, #f4a096 0%, #007365 100%);
     background-image:     -ms-radial-gradient(circle, #f4a096 0%, #007365 100%);
     background-image:      -o-radial-gradient(circle, #f4a096 0%, #007365 100%);
-}
+}*/
 
 p{
 	font-family: sans-serif;
