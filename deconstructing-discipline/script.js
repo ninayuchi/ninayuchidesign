@@ -116,10 +116,9 @@ function generatePDF(){
 		foreignObjectRendering: true,
 		useCORS: true,
 
-		console.log("119");
-
 	}).then(canvas => {
 
+	console.log("121");
     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     image.crossOrigin = "Anonymous";
     window.location.href=image;
