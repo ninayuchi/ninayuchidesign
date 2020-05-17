@@ -92,23 +92,23 @@ $(function(){
 
 });
 
-function createPDF() {
-	var doc = new jsPDF({ orientation: 'landscape'});
-	var elementHTML = $('canvas').html();
-	var specialElementHandlers = {
-		'elementH': function(element, renderer){
-			return true;
-		}
-	};
+// function createPDF() {
+// 	var doc = new jsPDF({ orientation: 'landscape'});
+// 	var elementHTML = $('canvas').html();
+// 	var specialElementHandlers = {
+// 		'elementH': function(element, renderer){
+// 			return true;
+// 		}
+// 	};
 
-	doc.fromHTML(elementHTML, 0,0, {
-		'width': 170,
-		'elementHandlers': specialElementHandlers
-	});
+// 	doc.fromHTML(elementHTML, 0,0, {
+// 		'width': 170,
+// 		'elementHandlers': specialElementHandlers
+// 	});
 
-	doc.save('myMap.pdf');
+// 	doc.save('myMap.pdf');
 
-}
+// }
 
 function generatePDF(){
 	html2canvas(document.querySelector("#canvasPNG"), { 
@@ -116,12 +116,15 @@ function generatePDF(){
 		foreignObjectRendering: true,
 		useCORS: true,
 
+		console.log("119");
+
 	}).then(canvas => {
 
     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     image.crossOrigin = "Anonymous";
     window.location.href=image;
 
+    	console.log("127");
 	});
 }
 
