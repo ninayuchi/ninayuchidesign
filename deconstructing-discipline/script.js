@@ -62,7 +62,7 @@ var changeAxis = function(event){
 var deleteAll = function(event){
 	var a = confirm ("Are you sure you want to delete all images?");
 	if (a===true){
-		$("img").remove();
+		$(".initial").remove();
 	}
 }
 
@@ -73,6 +73,7 @@ $(function(){
 	var myImages = $("img");
 	var click = myImages.mousedown(function(){
 		var selected = $(this);
+
 		myImages.css("z-index", "1");
 		selected.css("z-index", "10");
 		myImages.css("box-shadow", "2px 2px 8px #424242");
@@ -121,10 +122,10 @@ function generatePDF(){
 
     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     image.crossOrigin = "Anonymous";
-    // console.log(image);
-    // window.location.href=image;
+    console.log(image);
+    window.location.href=image;
 
-    this.createPDF();
+    // this.createPDF();
     document.body.removeChild(canvas);
 
 	});
