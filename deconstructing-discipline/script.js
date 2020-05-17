@@ -111,22 +111,16 @@ function createPDF() {
 }
 
 function generatePDF(){
-	html2canvas(document.querySelector("#body"), { 
+	html2canvas(document.querySelector("#canvasPNG"), { 
 		allowTaint: true,
 		foreignObjectRendering: true,
 		useCORS: true,
 
 	}).then(canvas => {
 
-    document.body.appendChild(canvas);
-
     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     image.crossOrigin = "Anonymous";
-    console.log(image);
     window.location.href=image;
-
-    // this.createPDF();
-    document.body.removeChild(canvas);
 
 	});
 }
