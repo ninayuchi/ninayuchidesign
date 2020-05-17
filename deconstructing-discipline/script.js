@@ -92,38 +92,37 @@ $(function(){
 
 });
 
-// function createPDF() {
-// 	var doc = new jsPDF({ orientation: 'landscape'});
-// 	var elementHTML = $('canvas').html();
-// 	var specialElementHandlers = {
-// 		'elementH': function(element, renderer){
-// 			return true;
-// 		}
-// 	};
+function createPDF() {
+	var doc = new jsPDF({ orientation: 'landscape'});
+	var elementHTML = $('canvas').html();
+	var specialElementHandlers = {
+		'elementH': function(element, renderer){
+			return true;
+		}
+	};
 
-// 	doc.fromHTML(elementHTML, 0,0, {
-// 		'width': 170,
-// 		'elementHandlers': specialElementHandlers
-// 	});
+	doc.fromHTML(elementHTML, 0,0, {
+		'width': 170,
+		'elementHandlers': specialElementHandlers
+	});
 
-// 	doc.save('myMap.pdf');
+	doc.save('myMap.pdf');
 
-// }
+}
 
 function generatePDF(){
-	html2canvas(document.querySelector("#canvasPNG"), { 
+	html2canvas(document.querySelector("#body"), { 
 		allowTaint: true,
 		foreignObjectRendering: true,
 		useCORS: true,
 
 	}).then(canvas => {
 
-	console.log("121");
     var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
     image.crossOrigin = "Anonymous";
+    console.log(image);
     window.location.href=image;
 
-    	console.log("127");
 	});
 }
 
