@@ -68,7 +68,7 @@ body{
 	width: 100%;
 	align-content: flex-end;
 	height: 35%;
-	background-image: url("test.png");
+	background-image: url("x.png");
 	background-position: center;
     background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -112,19 +112,19 @@ hr{
 h1, h2{
 	color: #c7c8ca;
 	text-transform: uppercase;
-	letter-spacing: 1px;
 	margin: 3% 0;
-/*	line-height: 60%;*/
 }
 
 h1{
 	font-family: simplon-bold, monospace;
 	font-size: 3em;
+	letter-spacing: 2px;
 }
 
 h2{
 	font-family: simplon, monospace;
 	font-size: 2em;
+	letter-spacing: 1px;
 }
 
 p{

@@ -31,32 +31,73 @@ $(function(){
 
 	var imageHold = $("#image-hold");
 	$(".grid").hover(function(){
-		var selectedProjectID = $(this).attr("id");
-		console.log(selectedProjectID);
+		var selectedProjectID = $(this).attr("id").toString();
 
-		if (selectedProjectID = deceptiveSpeech){
-			console.log("aaaaAAAAAA"); 
+		switch (selectedProjectID){
+			case "deceptiveSpeech":
+				imageHold.css('backgroundImage', 'url("covers/speech-cover.jpg")');
+			break;
+			case "deconstructingDiscipline":
+				imageHold.css('backgroundImage', 'url("covers/dd-cover.jpg")');
+			break;
+			case "makeathon":
+				imageHold.css('backgroundImage', 'url("covers/makeathon-cover.png")');
+			break;
+			case "lightbox":
+				imageHold.css('backgroundImage', 'url("covers/lightbox-cover.jpg")');
+			break;
+			case "sparkar":
+				imageHold.css('backgroundImage', 'url("covers/ar-cover.jpg")');
+			break;
+			case "hyphenatedidentity":
+				imageHold.css('backgroundImage', 'url("covers/identity-cover.jpg")');
+			break;
+			case "cca":
+				imageHold.css('backgroundImage', 'url("covers/cca-cover.jpg")');
+			break;
+			case "olympics":
+				imageHold.css('backgroundImage', 'url("covers/olympics-cover.png")');
+				imageHold.css('backgroundSize', '100% auto');
+			break;
+			case "unesco":
+				imageHold.css('backgroundImage', 'url("covers/unesco-cover.jpg")');
+			break;
+			case "textile":
+				imageHold.css('backgroundImage', 'url("covers/textile-cover.jpg")');
+			break;
+			case "post":
+				imageHold.css('backgroundImage', 'url("covers/post-cover.jpg")');
+			break;
+			case "calendar":
+				imageHold.css('backgroundImage', 'url("covers/calendar-cover.jpg")');
+			break;
+			case "typePoster":
+				imageHold.css('backgroundImage', 'url("covers/type-poster-cover.jpg")');
+			break;
+			case "slipknot":
+				imageHold.css('backgroundImage', 'url("covers/slipknot-cover.jpg")');
+			break;
+			case "ds":
+				imageHold.css('backgroundImage', 'url("covers/ds-cover.png")');
+			break;
+			case "precollege":
+				imageHold.css('backgroundImage', 'url("covers/precollege-cover.jpg")');
+			break;
+			case "ninament":
+				imageHold.css('backgroundImage', 'url("covers/ninament-cover.png")');
+			break;
+			default:
+				imageHold.css('backgroundImage', 'url("x.png")');
 		}
 
+		if (selectedProjectID == "olympics" || selectedProjectID == "deconstructingDiscipline"){
+			imageHold.css('backgroundSize', '100% auto');
+		} else if (selectedProjectID =! ""){
+			imageHold.css('backgroundSize', 'auto 100%');
+		}
 
-		// switch (selectedProjectID){
-		// 	case deceptiveSpeech:
-		// 		// imageHold.css('backgroundImage', 'url("random.jpg")');
-		// 		// imageHold.css('backgroundSize', 'auto 100%');
-		// 		console.log("aaaaAAAAAA");
-		// 	break;
-		// 	case ninament:
-		// 		// imageHold.css('backgroundImage', 'url("random.jpg")');
-		// 		// imageHold.css('backgroundSize', 'auto 100%');
-		// 		console.log("aaaaAAAAAAPLSSSS");
-		// 	break;
-		// 	default:
-		// 		imageHold.css('backgroundImage', 'url("test.png")');
-		// 		imageHold.css('backgroundSize', '100% 100%');
-		// 		console.log("68");
-		// }
 	}, function() { 
-		imageHold.css('backgroundImage', 'url("test.png")');
+		imageHold.css('backgroundImage', 'url("x.png")');
 		imageHold.css('backgroundSize', '100% 100%');
 	});
 
