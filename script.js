@@ -1,21 +1,66 @@
-var myArray = [
-  'an amateur tofu chef.',
-  'a tiger in the Chinese zodiac.',
-  'an Aquarius in the Western zodiac.',
-  'a dog person (and allergic to cats).',
-  'currently listening to <a href="https://open.spotify.com/track/5Kz1ZTkMQjhx0Chvmaoxzv?si=1YWNH5kBQwWnWfRPy_1E9Q" target="_blank">RFYL.</a>',
-  'a graphic design student at RISD.',
-  'thinking about her next hair color.',
-  'currently blonde (soon to change).',
-  'hydrated.',
-  'thinking about Christmas songs.',
-  'currently playing Fire Emblem.'
-];
+// SIDEBAR CONTROLS
+var openContact = function(event){
+	var text = document.getElementById("contact-text");
+	if (text.classList.contains("hide") == true){
+		text.style.height = "auto";
+		text.classList.remove("hide");
+	} else{
+		text.style.height = 0;
+		text.classList.add("hide");
+	};
+};
 
-var randomItem = myArray[Math.floor(Math.random()*myArray.length)];
+var openAbout = function(event){
+	var text = document.getElementById("about-text");
+	if (text.classList.contains("hide") == true){
+		text.style.height = "auto";
+		text.classList.remove("hide");
+	} else{
+		text.style.height = 0;
+		text.classList.add("hide");
+	};
+};
 
-document.getElementById("array").innerHTML = randomItem;
+$(function(){
+// PROJECT SELECTION
+	$(".grid").hover(function(){
+		$(this).children().css('color', '#ffe32d');
+	}, function() { 
+		$(this).children().css('color', '#c7c8ca');
+	});
 
-function myFunction() {
-	document.getElementById("array").innerHTML = myArray[Math.floor(Math.random()*myArray.length)];
-}
+	var imageHold = $("#image-hold");
+	$(".grid").hover(function(){
+		var selectedProjectID = $(this).attr("id");
+		console.log(selectedProjectID);
+
+		if (selectedProjectID = deceptiveSpeech){
+			console.log("aaaaAAAAAA"); 
+		}
+
+
+		// switch (selectedProjectID){
+		// 	case deceptiveSpeech:
+		// 		// imageHold.css('backgroundImage', 'url("random.jpg")');
+		// 		// imageHold.css('backgroundSize', 'auto 100%');
+		// 		console.log("aaaaAAAAAA");
+		// 	break;
+		// 	case ninament:
+		// 		// imageHold.css('backgroundImage', 'url("random.jpg")');
+		// 		// imageHold.css('backgroundSize', 'auto 100%');
+		// 		console.log("aaaaAAAAAAPLSSSS");
+		// 	break;
+		// 	default:
+		// 		imageHold.css('backgroundImage', 'url("test.png")');
+		// 		imageHold.css('backgroundSize', '100% 100%');
+		// 		console.log("68");
+		// }
+	}, function() { 
+		imageHold.css('backgroundImage', 'url("test.png")');
+		imageHold.css('backgroundSize', '100% 100%');
+	});
+
+
+
+
+});

@@ -2,55 +2,203 @@
 
 
 
-<!-- ~*~WELCOME TO NINA'S WEBSITE~*~ -->
-<!-- ~*~ENJOY YOUR VISIT~*~ -->
-<!-- ~*~PLEASE DON'T JUDGE MY CODE~*~ -->
+<!-- WELCOME TO MY WEBSITE! -->
+<!-- ENJOY YOUR VISIT -->
+<!-- PLEASE DON'T JUDGE MY CODE... -->
 
 
 
 <html lang="en">
-<!-- HEAD -->
     <head>
     <title>Nina Yuchi</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://use.typekit.net/gnl3cen.css">
+	<link rel="stylesheet" href="https://use.typekit.net/wll3coq.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 
 
 <body>
-<!-- HEADER -->
-	<div class="heading">
-		<div class="subhead title">
-			<a href="index.html">Nina Yuchi</a>
+
+<div id="container">
+<!-- SIDEBAR -->
+	<div id="left">
+	<!-- HEADING -->
+	<div id="heading">
+		<h1><a href="index.html">Nina Yuchi</a></h1>
+		<br class="desktop">
+		<h2 onclick="openContact()" class="desktop">Contact</h2>
+		<div id="contact-text" class="hide">
+			<p class="contact-link"><a target="_blank" href="mailto:nyuchi@risd.edu">Email</a></p>
+			<p class="contact-link"><a target="_blank" href="NinaYuchiResume.pdf">Resume</a></p>
+			<p class="contact-link"><a target="_blank" href="https://www.linkedin.com/in/ninayuchi/">LinkedIn</a></p>
+			<p class="contact-link"><a target="_blank" href="https://www.instagram.com/ninajunyuchi/">Instagram</a></p>
+			<p class="contact-link"><a target="_blank" href="https://risd.ccnsite.com/nyuchib1ba">RISD Portfolios</a></p>
+			<br>
 		</div>
-		<div class="subhead about">
-			<a href="about.html">About</a><br class="break">
-			<a href="contact.html">Contact</a>
+		<h2 onclick="openAbout()" class="desktop">About</h2>
+		<div id="about-text" class="hide">
+			<p>Nina is a Chinese-American graphic designer who can't stop thinking about her next hair color. She is interested in experimental web design and its intersection with social change & identity.
+
+				<br><br>
+			Originally from Maryland (“right in between Baltimore and DC!”), she is currently at the Rhode Island School of Design. Nina designs for <a href="https://thad.risd.edu/">RISD’s Art History department</a>, <a href="https://ce.risd.edu/">RISD Continuing Education</a>, and <a href="http://post.browndailyherald.com/">Brown University’s post- magazine</a>.
+				<br><br>
+			This website was designed and coded by her with HTML, CSS, Javascript, and jQuery. Fonts in use are Nimbus Sans Extended and Simplon Mono.</p>
 		</div>
+		<h2 class="mobile"><a href="contact.html">Contact</a></h2>
+		<h2 class="mobile"><a href="about.html">About</a></h2>
 	</div>
-<!-- BODY -->
-	<div class="body">
-		<p class="bigtext">
-			Nina Yuchi is 
-			<span onclick="myFunction()" title="Who IS she?">
-				<span id="array"></span>
-			</span>
-		</p>
-	<!-- PROJECT IMAGES -->
-		<a href="hyphenatedidentity.html"><img class="image-block" src="covers/identity-cover.jpg"></a>
-		<a href="unesco.html"><img class="image-block" src="covers/unesco-cover.jpg"></a>
-		<a href="ds.html"><img class="image-block" src="covers/ds-cover.png"></a>
-		<a href="textile.html"><img class="image-block" src="covers/posters-cover.jpg"></a>
-		<a href="post.html"><img class="image-block" src="covers/post-cover.jpg"></a>
-		<a href="type-poster.html"><img class="image-block" src="covers/type-poster-cover.jpg"></a>
-		<a href="ninament.html"><img class="image-block" src="covers/ninament-cover.png"></a>
-		<a href="continuinged.html"><img class="image-block" src="covers/precollege-cover.png"></a>
+	<hr class="desktop">
+	<!-- IMAGE -->
+	<div id="image-hold"></div>
+	</div>
+	<hr class="mobile">
+
+<!-- PROJECT GRID -->
+	<div id="projects">
+		<a href="deceptive.html">
+			<div class="grid" id="deceptiveSpeech">
+				<p class="grid-item">Deceptive Speech</p>
+				<p class="grid-item">2020</p>
+				<p class="grid-item">Digital</p>
+			</div>
+		</a>
+
+		<a href="deconstructing-discipline.html">
+			<div class="grid" id="deconstructingDiscipline">
+				<p class="grid-item">Deconstructing Discipline</p>
+				<p class="grid-item">2020</p>
+				<p class="grid-item">Web</p>
+			</div>
+		</a>
+
+		<a href="makeathon.html">
+			<div class="grid" id="makeathon">
+				<p class="grid-item">IDSA Make-a-Thon Website</p>
+				<p class="grid-item">2020</p>
+				<p class="grid-item">Web</p>
+			</div>
+		</a>
+
+		<a href="lightbox.html">
+			<div class="grid" id="lightbox">
+				<p class="grid-item">How to Make a Lightbox</p>
+				<p class="grid-item">2020</p>
+				<p class="grid-item">Digital</p>
+			</div>
+		</a>
+		</a>
+		
+
+		<a href="sparkar.html">
+			<div class="grid" id="sparkar">
+				<p class="grid-item">Intro to SparkAR</p>
+				<p class="grid-item">2020</p>
+				<p class="grid-item">Digital</p>
+			</div>
+		</a>
+
+		<a href="hyphenatedidentity.html">
+			<div class="grid" id="hyphenatedidentity">
+				<p class="grid-item">The Hyphe—nated Iden—tity</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Web</p>
+			</div>
+		</a>
+
+		<a href="cca.html">
+			<div class="grid" id="cca">
+				<p class="grid-item">Conversations on Contemporary Art Poster</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Poster</p>
+				</	div>
+		</div>
+
+		<a href="olympics.html">
+			<div class="grid" id="olympics">
+				<p class="grid-item">Olympics Poster and Branding</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Poster</p>
+			</div>
+		</a>
+
+		<a href="unesco.html">
+			<div class="grid" id="unesco">
+				<p class="grid-item">The Forbidden City Branding Identity</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Branding</p>
+			</div>
+		</a>
+
+		<a href="textile.html">
+			<div class="grid" id="textile">
+				<p class="grid-item">Textile Taxonomy</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Poster</p>
+			</div>
+		</a>
+
+		<a href="post.html">
+			<div class="grid" id="post">
+				<p class="grid-item">post- Magazine 2019</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Publication</p>
+			</div>
+		</a>
+
+		<a href="calendar.html">
+			<div class="grid" id="calendar">
+				<p class="grid-item">RISD Pre-College Calendar</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Poster</p>
+			</div>
+		</a>
+
+		<a href="type-poster.html">
+			<div class="grid" id="typePoster">
+				<p class="grid-item">type_poster.pdf</p>
+				<p class="grid-item">2019</p>
+				<p class="grid-item">Poster</p>
+			</div>
+		</a>
+
+		<a href="slipknot.html">
+			<div class="grid" id="slipknot">
+				<p class="grid-item">How to Tie a Slip Knot</p>
+				<p class="grid-item">2018</p>
+				<p class="grid-item">Video</p>
+			</div>
+		</a>
+
+		<a href="ds.html">
+			<div class="grid" id="ds">
+				<p class="grid-item">Vote, or Die</p>
+				<p class="grid-item">2018</p>
+				<p class="grid-item">Digital</p>
+			</div>
+		</a>
+
+		<a href="precollege.html">
+			<div class="grid" id="precollege">
+				<p class="grid-item">RISD Pre-College Banners</p>
+				<p class="grid-item">2018</p>
+				<p class="grid-item">Print</p>
+			</div>
+		</a>
+
+		<a href="ninament.html">
+			<div class="grid" id="ninament">
+				<p class="grid-item">Nina Ment</p>
+				<p class="grid-item">2018</p>
+				<p class="grid-item">Web</p>
+			</div>
+		</a>
+
 	</div>
 
-	<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
