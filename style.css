@@ -93,7 +93,7 @@ hr{
 	padding: 0 auto !important;
 }
 
-#project-images img, iframe, .two-column{
+#project-images img, iframe, .two-column, video{
 	width: 90%;
 	padding: 2% 5%;
 }
