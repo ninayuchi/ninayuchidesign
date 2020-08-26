@@ -25,8 +25,16 @@ body{
 }
 
 #left{
-	flex: 33%;
+	overflow: auto;
+	flex: 33%;  -ms-overflow-style: none;
+  	scrollbar-width: none;
+  	height: 100%;
 }
+
+#left::-webkit-scrollbar {
+  display: none;
+}
+
 
 #projects, #project-images{
 	flex: 67%;
@@ -46,7 +54,7 @@ body{
 
 #heading, #proj-left{
 	padding: 5%;
-	overflow: auto;
+	overflow: scroll;
 }
 
 #heading::-webkit-scrollbar, #projects::-webkit-scrollbar, #project-images::-webkit-scrollbar, #proj-left::-webkit-scrollbar {
