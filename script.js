@@ -86,6 +86,18 @@ $(function(){
 			case "ninament":
 				imageHold.css('backgroundImage', 'url("covers/ninament-cover.png")');
 			break;
+			case "posters":
+				imageHold.css('backgroundImage', 'url("covers/poster-cover.jpg")');
+			break;
+			case "politics":
+				imageHold.css('backgroundImage', 'url("covers/politics-cover.png")');
+			break;
+			case "oaxaca":
+				imageHold.css('backgroundImage', 'url("covers/oaxaca-cover.jpg")');
+			break;
+			case "rug":
+				imageHold.css('backgroundImage', 'url("covers/rug-cover.png")');
+			break;
 			default:
 				imageHold.css('backgroundImage', 'url("x.png")');
 		}
